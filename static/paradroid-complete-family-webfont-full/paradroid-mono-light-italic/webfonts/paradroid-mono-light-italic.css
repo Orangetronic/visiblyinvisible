@@ -1,0 +1,27 @@
+/*
+Font: 		ParadroidMono
+Style: 		Light Italic
+URL: 		https://www.youworkforthem.com/font/T8975/paradroid
+Foundry: 	The Northern Block
+Foundry: 	https://www.youworkforthem.com/designer/94/the-northern-block
+Copyright:	Copyright © 2018 by Jonathan Hill. All rights reserved.
+Version: 	17
+Created:	March 20, 2018
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'ParadroidMono-LightItalic';
+	src: url('paradroid-mono-light-italic.eot');
+	src: url('paradroid-mono-light-italic.eot?#iefix') format('embedded-opentype'),
+             url('paradroid-mono-light-italic.woff2') format('woff2'),
+	     url('paradroid-mono-light-italic.woff') format('woff'),
+	     url('paradroid-mono-light-italic.ttf') format('truetype'),
+	     url('paradroid-mono-light-italic.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
