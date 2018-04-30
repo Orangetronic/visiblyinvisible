@@ -18,12 +18,33 @@ const MegaHeading = styled.h1`
   margin-bottom: -1rem;
 `
 
+const TopNavs = styled.nav`
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  a {
+    text-align: center;
+    flex: 1 1 120px;
+    max-width: 150px;
+    height: 100%;
+    background: black;
+    color: white;
+    line-height: 2rem;
+    text-decoration: none;
+    margin-left: 1px;
+    &:hover {
+      color: #61DDF4;
+      background: #444;
+    }
+  }
+`
+
 const gutter = 2
 
 const Grid = styled.div`
   padding: 0;
   max-width: 100%;
-  height: 100vh;
+  height: calc(100vh - 2rem);
   @media screen and (min-width: 850px) {
     display: grid;
   }
@@ -115,6 +136,10 @@ const Blurb = styled.div`
 
 
 export default () => (<Page>
+  <TopNavs>
+    <a href="#">Stories</a>
+    <a href="#">Resources</a>
+  </TopNavs>
   <Grid>
     <Headbox>
     <MegaHeading>{title}</MegaHeading>
