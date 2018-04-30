@@ -62,7 +62,7 @@ const Sidebox = styled.div`
   align-self: bottom;
   background: white;
   display: flex;
-  > p {
+  > article {
     margin-top: auto;
   }
   @media screen and (max-width:800px) {
@@ -70,7 +70,7 @@ const Sidebox = styled.div`
     grid-row: 4 / 7;
   }
   @media screen and (min-width: 1800px) {
-    > p {
+    > article {
       column-count: 2;
       font-size: 1.4rem;
       column-gap: ${gutter}rem;
@@ -120,9 +120,17 @@ export default () => (<Page>
     <MegaHeading>{title}</MegaHeading>
     </Headbox>
     <Sidebox>
-    <p>
-    Media has the potential to expose injustice and inspire change. But for Transgender people, this potential is floundering. Transgenownder people face extreme violence and discrimination in personal, professional and legal arenas. Yet their stories remain invisible in the news. The interview rhetoric treats Transgender people more as specimens of science than as people with dynamic lived experiences. In the infamous interview with Laverne Cox and Carmen Carrera, Katie Couric offensively delegitimized her subjects’ authenticity with ignorant questions that focused on the content between Cox and Carrera’s legs. This was a missed opportunity to investigate the violent sociopolitical environment facing Transgender people. Media is failing the Transgender community and it is time for change.
-    </p>
+      <article alt="site description">
+        <p>
+        Lorem ipsum dolor sit amet, cu cum quot vocibus, nam dolor torquatos ea. Eam impedit maiorum scripserit ei, case vivendo ne ius. Usu ea sumo iudico quaeque, noster cetero prompta ut est, ipsum simul civibus sea ut. Dolores fastidii mel ex, usu integre intellegam at, mucius oportere pro ad.
+        </p>
+        <p>
+        Fastidii recteque adolescens no vel, ea eam ferri modus. Sit unum dicant docendi ei. Te his zril decore mollis, ullum dolorum definitionem has ei. Virtute instructior in nam.
+        </p>
+        <p>
+        Adhuc ipsum perfecto vel id. Eum sensibus repudiandae deterruisset ex, quot civibus cu eum. Equidem moderatius has ad, ex mutat dolorem sit, ius ex nostrum albucius suscipit.
+        </p>
+      </article>
     </Sidebox>
     <Headshot />
     <Blurb>
