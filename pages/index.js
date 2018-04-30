@@ -94,6 +94,26 @@ const Mapbox = styled.div`
   }
 `
 
+const Headshot = styled.div`
+  grid-column: 1 / 3;
+  grid-row: auto / span 2;
+  align-self: top;
+  background: #eee;
+  padding: 0 !important;
+  background-image: url('/static/images/headshot.gif');
+  background-position: center center;
+  background-size: cover;
+`
+
+const Blurb = styled.div`
+  grid-column: 1 / 3;
+  grid-row: auto / span 2;
+  align-self: top;
+`
+
+
+
+
 export default () => (<Page>
   <Grid>
     <Headbox>
@@ -101,9 +121,15 @@ export default () => (<Page>
     </Headbox>
     <Sidebox>
     <p>
-    Media has the potential to expose injustice and inspire change. But for Transgender people, this potential is floundering. Transgender people face extreme violence and discrimination in personal, professional and legal arenas. Yet their stories remain invisible in the news. The interview rhetoric treats Transgender people more as specimens of science than as people with dynamic lived experiences. In the infamous interview with Laverne Cox and Carmen Carrera, Katie Couric offensively delegitimized her subjects’ authenticity with ignorant questions that focused on the content between Cox and Carrera’s legs. This was a missed opportunity to investigate the violent sociopolitical environment facing Transgender people. Media is failing the Transgender community and it is time for change.
+    Media has the potential to expose injustice and inspire change. But for Transgender people, this potential is floundering. Transgenownder people face extreme violence and discrimination in personal, professional and legal arenas. Yet their stories remain invisible in the news. The interview rhetoric treats Transgender people more as specimens of science than as people with dynamic lived experiences. In the infamous interview with Laverne Cox and Carmen Carrera, Katie Couric offensively delegitimized her subjects’ authenticity with ignorant questions that focused on the content between Cox and Carrera’s legs. This was a missed opportunity to investigate the violent sociopolitical environment facing Transgender people. Media is failing the Transgender community and it is time for change.
     </p>
     </Sidebox>
+    <Headshot />
+    <Blurb>
+      <p>Name: Somebody</p>
+      <p>Location: Someplace</p>
+      <p>Blurb: some smol blurb</p>
+    </Blurb>
     <Mapbox>
       <MapRender center={[51.505, -0.09]} zoom={13} />
     </Mapbox>
