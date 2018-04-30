@@ -1,6 +1,7 @@
 import styled    from "styled-components"
 import Page      from "../components/page"
 import { title } from "../settings"
+import MapRender from "../components/map"
 
 const MegaHeading = styled.h1`
   font-size: 8.5vw;
@@ -11,6 +12,7 @@ const MegaHeading = styled.h1`
     #D68A9E,
     #8985A4
   );
+  border-bottom-right-radius: 3px;
   color: rgba(255,255,255,1.0);
   padding: 1rem;
   margin-bottom: -1rem;
@@ -22,7 +24,9 @@ const Grid = styled.div`
   padding: 0;
   max-width: 100%;
   height: 100vh;
-  display: grid;
+  @media screen and (min-width: 850px) {
+    display: grid;
+  }
   grid-gap: ${gutter}rem;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(7, 1fr); 
@@ -68,9 +72,25 @@ const Sidebox = styled.div`
   @media screen and (min-width: 1800px) {
     > p {
       column-count: 2;
+      font-size: 1.4rem;
       column-gap: ${gutter}rem;
       column-rule: #eee 1px solid;
     }
+  }
+`
+const Mapbox = styled.div`
+  min-height: 500px;
+  grid-column: 3 / 8;
+  grid-row: 4 / 8;
+  align-self: stretch;
+  background: #eee;
+  padding: 0 !important;
+  .leaflet-container {
+    width: 100%;
+    height: 100%;
+    min-height:500px;
+    border-top-left-radius: 3px;
+    overflow: hidden;
   }
 `
 
@@ -84,5 +104,8 @@ export default () => (<Page>
     Media has the potential to expose injustice and inspire change. But for Transgender people, this potential is floundering. Transgender people face extreme violence and discrimination in personal, professional and legal arenas. Yet their stories remain invisible in the news. The interview rhetoric treats Transgender people more as specimens of science than as people with dynamic lived experiences. In the infamous interview with Laverne Cox and Carmen Carrera, Katie Couric offensively delegitimized her subjects’ authenticity with ignorant questions that focused on the content between Cox and Carrera’s legs. This was a missed opportunity to investigate the violent sociopolitical environment facing Transgender people. Media is failing the Transgender community and it is time for change.
     </p>
     </Sidebox>
+    <Mapbox>
+      <MapRender center={[51.505, -0.09]} zoom={13} />
+    </Mapbox>
   </Grid>
 </Page>)
