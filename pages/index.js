@@ -164,7 +164,7 @@ export default () => (<Page>
       <p>Blurb: some smol blurb</p>
     </Blurb>
     <Mapbox>
-      <MapRender center={[51.505, -0.09]} zoom={13} />
+      <MapRender center={[51.5022, -0.119]} zoom={13} />
     </Mapbox>
   </Grid>
 </Page>)
